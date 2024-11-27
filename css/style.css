@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+  --icon-color: #d63384;
+  --first-color: #6f42c1;
+}
+/*========== Variables Dark theme ==========*/
+body.dark-mode {
+  --bg-color: #2d2345;
+  --text-color: #fd7e14;
+  --title-color: #fff;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 2rem;
+  --small-font-size: 0.813rem;
+  --big-font-size: 3rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+/* applying google font over the website  */
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+  color: var(--text-color);
+}
+.navbar-toggler {
+  right: 25px;
+  position: sticky;
+}
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url(../image/cover_dark_background.avif);
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+  background-color: var(--icon-color);
+}
+
+#portfolio img {
+  height: 500px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../image/cover_dark_background.avif");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+  #about .hire-text h2 {
+    height: 70px;
+    width: 70px;
+  }
+}
+/* dark-light mode*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+.themeToggle {
+  display: flex;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.dark-mode {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+/* Styles for the sun and moon icons */
+.sun-icon,
+.moon-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+.sun-icon {
+  display: none;
+}
+.dark-mode .moon-icon {
+  display: none;
+  /* color:#2d2345; */
+}
+.dark-mode .sun-icon {
+  display: inline-block;
+}
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 2rem;
+  bottom: -20%;
+  background-color: var(--icon-color);
+  opacity: 0.8;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.show-scroll {
+  bottom: 5rem;
+}
+
+

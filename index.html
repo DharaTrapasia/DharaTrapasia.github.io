@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website | Dhara Trapasia</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header class="bg-dark fixed-top">
+        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#">Dhara Trapasia</a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-2">
+                <a class="nav-link" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item mx-2">
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            </div>
+            <!--  dark-light theme -->
+            <div class="nav__btns themeToggle" id="themetogglebutton">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!-- Hero or Showcase Section -->
+    <section class="hero d-flex flex-column align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 class="h1 text-white fw-medium fst-italic">Dhara Trapasia</h1>
+            <div class="display-3 text-white fw-bold h2">
+            <!-- Element to contain animated typing -->
+            i'm Web<p><span id="element"></span></p>
+            </div>
+            <a href="#contact" class="btn btn-lg fs-6 bg-secondary text-white fw-medium mt-5 p-3 hero_btn">Hire Me!</a>
+        </div>
+    </section>
+    <!-- Hero or Showcase Section -->
+    <main id="main">
+        <!-- Skills Section -->
+    <section class="container py-5" id="skills">
+        <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+            <h2>SKILLS</h2>
+            <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
+        </div>
+        </div>
+        <div class="row d-flex justify-content-between mx-0">
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+            <i class="text-white d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
+            <h3 class="mt-4 h4">Front-end Development</h3>
+            <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+            <i class="text-white d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
+            <h3 class="mt-4 h4">Web Development</h3>
+            <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express. Experience working with databases such as MongoDB and MySQL.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+            <i class="text-white d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
+            <h3 class="mt-4 h4">CMS Development</h3>
+            <p class="text-center">Proficient in developing, creation, editing, organization and publication of content. Experienced in Wordpress to create and publish content on the web.              
+            </p>
+        </div>
+        </div>
+    </section>
+    <!-- Skills Section End-->
+    <!-- Portfolio Section -->
+    <section class="container py-5" id="portfolio">
+        <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+            <h2>PORTFOLIO</h2>
+            <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+        </div>
+        <div class="row mt-5 mx-0 justify-content-center align-items-center">
+            <img src="image/workingmode.jpg" alt="workingmode_image">
+        </div> 
+        </div>      
+    </section>
+    <!--portfolio section end-->
+    <!-- Contact Section -->
+    <section class="container-fluid py-5" id="contact">
+        <div class="row mt-1 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+            <h2 class="text-white">CONTACT ME</h2>
+            <h5 class="text-secondary fw-normal py-2 fst-italic">Get In Touch</h5>
+        </div>
+        <div class="row pt-4 mt-5">
+            <div class="col-12">
+            <div class="row d-flex justify-content-center text-white text-center">
+                <div class="row d-flex justify-content-center">
+                <div class="col-lg-12">
+                <i class="fa-solid fa-envelope">&nbsp;&nbsp;&nbsp;<span>dharapatelipi@gmail.com</span> </i>
+                </div>
+                <div class="col-lg-12 mt-5">
+                <ul class="social-icons d-flex justify-content-center">
+                    <a href="#" class="bg-light text-dark d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-github"></i></small></a>
+                    <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-linkedin-in"></i></small></a>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>      
+    <!--contact section end-->
+    <!-- ======= Footer ======= -->
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-black text-center text-white flex-column pt-3 d-flex align-items-center justify-content-between">
+        <p>Copyright © 2024 Dhara Trapasia</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- scroll_up arrow -->
+    <a href="#" class="scrollup" id="scroll-up" title="click to go up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- scroll_up arrow end-->
+    <script src="js1/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+    </script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed("#element", {
+        strings: ["Developer","Designer"],
+        typeSpeed: 50,
+        loop: true,
+        });
+    </script>
+</body>
+</html>
