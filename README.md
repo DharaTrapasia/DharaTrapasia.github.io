@@ -15,18 +15,16 @@ This project was built using the following technologies:
 - FontAwesome Icons
 - git
 
-  ## **Features**
+## **Features**
 
-- **📖 Single-Page Layout**
+  - **📖 Single-Page Layout**
+  - **🎨 Styled with Bootstrap and Css**
+  - **🌗 Dark/Light Mode**
+  - **📱 Fully Responsive**
 
-- **🎨 Styled with Bootstrap and Css**
-  
-- **🌗 Dark/Light Mode**
-
-- **📱 Fully Responsive**
-
-  ## 🛠 Setup Instructions
+## 🛠 Setup Instructions
 
 Run this command to clone the repository: 
 
+      https://github.com/DharaTrapasia/DharaTrapasia.github.io.git
   
